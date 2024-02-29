@@ -64,6 +64,18 @@ export class AnalyticsService {
     window.gtag = function () {
       window.dataLayer?.push(arguments);
     };
+
+    // Cookie banner consent initial state
+    // This code is modified in the @angular/docs package in the cookie-popup component.
+    // Docs: https://developers.google.com/tag-platform/security/guides/consent
+    window.gtag('content', 'default', {
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      ad_storage: 'denied',
+      analytics_storage: 'denied',
+      wait_for_update: 500,
+    });
+
     window.gtag('js', new Date());
 
     // Configure properties before loading the script. This is necessary to avoid
