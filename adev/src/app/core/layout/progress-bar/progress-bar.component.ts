@@ -34,7 +34,7 @@ export const PROGRESS_BAR_DELAY = 30;
   standalone: true,
   imports: [NgProgressComponent],
   template: `
-    <ng-progress aria-label="Page load progress" />
+    <ng-progress aria-label="页面加载进度" />
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

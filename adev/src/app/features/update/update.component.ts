@@ -44,7 +44,7 @@ export default class AppComponent {
   };
 
   protected readonly optionList: Option[] = [
-    {id: 'ngUpgrade', name: 'ngUpgrade', description: 'to combine AngularJS & Angular'},
+    {id: 'ngUpgrade', name: 'ngUpgrade', description: '合并 AngularJS 与 Angular'},
     {id: 'material', name: 'Angular Material', description: ''},
     {id: 'windows', name: 'Windows', description: ''},
   ];
@@ -131,14 +131,14 @@ export default class AppComponent {
 
     // Refuse to generate recommendations for downgrades
     if (this.to.number < this.from.number) {
-      alert('We do not support downgrading versions of Angular.');
+      alert('我们不支持降级 Angular 版本。');
       return;
     }
 
-    const labelTitle = 'Guide to update your Angular application';
-    const labelBasic = 'basic applications';
-    const labelMedium = 'medium applications';
-    const labelAdvanced = 'advanced applications';
+    const labelTitle = 'Angular 应用程序更新指南';
+    const labelBasic = '基础应用';
+    const labelMedium = '中等应用';
+    const labelAdvanced = '高级应用';
 
     this.title = `${labelTitle} v${this.from.name} -> v${this.to.name}
     for
@@ -234,7 +234,7 @@ export default class AppComponent {
 
     // Provide npm/yarn instructions for versions before 6
     if (this.to.number < 600) {
-      const actionMessage = `Update all of your dependencies to the latest Angular and the right version of TypeScript.`;
+      const actionMessage = `将所有依赖项更新到最新的 Angular 和正确版本的 TypeScript。`;
 
       if (isWindows) {
         const packages =
@@ -245,18 +245,18 @@ export default class AppComponent {
           additionalDeps;
 
         upgradeStep = {
-          step: 'General Update',
+          step: '一般更新',
           action: `${actionMessage}
-          If you are using Windows, you can use:
+          如果你正在使用 Windows，则可以用：
 
 \`${this.packageManager} ${packages}\``,
         } as Step;
       } else {
         const packages = `@angular/{${angularPackages.join(',')}}@${angularVersion} ${additionalDeps}`;
         upgradeStep = {
-          step: 'General update',
+          step: '一般更新',
           action: `${actionMessage}
-          If you are using Linux/Mac, you can use:
+          如果你正在使用 Linux/Mac，则可以用：
 
 \`${this.packageManager} ${packages}\``,
         } as Step;

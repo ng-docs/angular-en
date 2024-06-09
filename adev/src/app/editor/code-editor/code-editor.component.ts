@@ -152,7 +152,7 @@ export class CodeEditor implements AfterViewInit, OnDestroy {
 
     if (renameFileInputValue) {
       if (renameFileInputValue.includes('..')) {
-        alert('File name can not contain ".."');
+        alert('文件名不能包含 ".."');
         return;
       }
 
@@ -160,7 +160,7 @@ export class CodeEditor implements AfterViewInit, OnDestroy {
       const newFile = 'src/' + renameFileInputValue;
 
       if (this.files().find(({filename}) => filename.includes(newFile))) {
-        alert('File name already exists');
+        alert('文件名已存在');
         return;
       }
 
@@ -179,7 +179,7 @@ export class CodeEditor implements AfterViewInit, OnDestroy {
 
     if (newFileInputValue) {
       if (newFileInputValue.includes('..')) {
-        alert('File name can not contain ".."');
+        alert('文件名不能包含 ".."');
         return;
       }
 
@@ -187,7 +187,7 @@ export class CodeEditor implements AfterViewInit, OnDestroy {
       const newFile = 'src/' + newFileInputValue;
 
       if (this.files().find(({filename}) => filename.includes(newFile))) {
-        alert('File already exists');
+        alert('文件已存在');
         return;
       }
 

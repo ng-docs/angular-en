@@ -15,7 +15,7 @@ import {ApiItemsGroup} from '../interfaces/api-items-group';
 import {ApiManifest} from '../interfaces/api-manifest';
 
 export const FEATURED_API_ITEMS_KEY = 'apiFeaturedItems';
-export const FEATURED_GROUP_TITLE = 'Most Common';
+export const FEATURED_GROUP_TITLE = '最常用';
 
 export type FeaturedItemsByGroup = Record<string, ApiItem[]>;
 
