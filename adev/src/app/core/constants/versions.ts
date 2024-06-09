@@ -11,55 +11,55 @@ export const VERSIONS_CONFIG = {
   aioVersions: [
     {
       version: 'v18',
-      url: 'https://v18.angular.dev/overview',
+      url: 'https://v18.angular.cn/overview',
     },
     {
       version: 'v17',
-      url: 'https://v17.angular.io/docs',
+      url: 'https://v17.angular.cn/docs',
     },
     {
       version: 'v16',
-      url: 'https://v16.angular.io/docs',
+      url: 'https://v16.angular.cn/docs',
     },
     {
       version: 'v15',
-      url: 'https://v15.angular.io/docs',
+      url: 'https://v15.angular.cn/docs',
     },
     {
       version: 'v14',
-      url: 'https://v14.angular.io/docs',
+      url: 'https://v14.angular.cn/docs',
     },
     {
       version: 'v13',
-      url: 'https://v13.angular.io/docs',
+      url: 'https://v13.angular.cn/docs',
     },
     {
       version: 'v12',
-      url: 'https://v12.angular.io/docs',
+      url: 'https://v12.angular.cn/docs',
     },
     {
       version: 'v11',
-      url: 'https://v11.angular.io/docs',
+      url: 'https://v11.angular.cn/docs',
     },
     {
       version: 'v10',
-      url: 'https://v10.angular.io/docs',
+      url: 'https://v10.angular.cn/docs',
     },
     {
       version: 'v9',
-      url: 'https://v9.angular.io/docs',
+      url: 'https://v9.angular.cn/docs',
     },
     {
       version: 'v8',
-      url: 'https://v8.angular.io/docs',
+      url: 'https://v8.angular.cn/docs',
     },
     {
       version: 'v7',
-      url: 'https://v7.angular.io/docs',
+      url: 'https://v7.angular.cn/docs',
     },
     {
       version: 'v6',
-      url: 'https://v6.angular.io/docs',
+      url: 'https://v6.angular.cn/docs',
     },
     {
       version: 'v5',
@@ -67,11 +67,11 @@ export const VERSIONS_CONFIG = {
     },
     {
       version: 'v4',
-      url: 'https://v4.angular.io/docs',
+      url: 'https://v4.angular.cn/docs',
     },
     {
       version: 'v2',
-      url: 'https://v2.angular.io/docs',
+      url: 'https://v2.angular.cn/docs',
     },
   ],
 };

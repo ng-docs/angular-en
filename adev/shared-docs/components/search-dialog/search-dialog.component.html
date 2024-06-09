@@ -6,7 +6,7 @@
       [ngModel]="searchQuery()"
       (ngModelChange)="updateSearchQuery($event)"
       class="docs-search-input"
-      placeholder="Search docs"
+      placeholder="搜索文档"
     />
 
     @if (searchResults() && searchResults()!.length > 0) {
@@ -49,7 +49,7 @@
               </div>
 
               <!-- Page title -->
-              <span class="docs-result-page-title">{{ result.hierarchy?.lvl0 }}</span>
+              <span class="docs-result-page-title">{{ result.hierarchy.lvl0 }}</span>
             </a>
           </li>
         }
@@ -58,22 +58,23 @@
       <div class="docs-search-results docs-mini-scroll-track">
         @if (searchResults() === undefined) {
           <div class="docs-search-results__start-typing">
-            <span>Start typing to see results</span>
+            <span>开始输入以查看结果</span>
           </div>
         } @else if (searchResults()?.length === 0) {
           <div class="docs-search-results__no-results">
-            <span>No results found</span>
+            <span>未找到结果</span>
           </div>
         }
       </div>
     }
 
     <div class="docs-algolia">
-      <span>Search by</span>
+      <span>由</span>
       <a target="_blank" rel="noopener"
          href="https://www.algolia.com/developers/?utm_source=angular.dev&utm_medium=referral&utm_content=powered_by&utm_campaign=docsearch">
         <docs-algolia-icon />
       </a>
+      <span>提供搜索支持</span>
     </div>
   </div>
 </dialog>

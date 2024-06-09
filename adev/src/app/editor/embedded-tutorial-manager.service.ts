@@ -141,7 +141,7 @@ export class EmbeddedTutorialManager {
       `${TUTORIALS_ASSETS_WEB_PATH}/${tutorial}/source-code.json`,
     );
 
-    if (!tutorialSourceCode.ok) throw new Error(`Missing source code for tutorial ${tutorial}`);
+    if (!tutorialSourceCode.ok) throw new Error(`缺少教程 ${tutorial} 的源代码。`);
 
     return await tutorialSourceCode.json();
   }
@@ -151,7 +151,7 @@ export class EmbeddedTutorialManager {
       `${TUTORIALS_ASSETS_WEB_PATH}/${tutorial}/metadata.json`,
     );
 
-    if (!tutorialSourceCode.ok) throw new Error(`Missing metadata for ${tutorial}`);
+    if (!tutorialSourceCode.ok) throw new Error(`缺少教程 ${tutorial} 的元数据。`);
 
     return await tutorialSourceCode.json();
   }

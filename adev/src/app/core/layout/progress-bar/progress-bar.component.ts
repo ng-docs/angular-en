@@ -34,7 +34,7 @@ export const PROGRESS_BAR_DELAY = 30;
   selector: 'adev-progress-bar',
   imports: [NgProgressbar],
   template: `
-    <ng-progress aria-label="Page load progress" />
+    <ng-progress aria-label="页面加载进度" />
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
