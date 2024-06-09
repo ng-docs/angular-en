@@ -2,31 +2,28 @@
   @switch (true) {
     @case (error()?.type === ErrorType.UNSUPPORTED_BROWSER_ENVIRONMENT) {
       @if(isIos) {
-        <p>Open angular.dev on desktop to code in your browser.</p>
+        <p>在桌面设备上打开 angular.dev，直接在浏览器中编写代码。</p>
       } @else if(isFirefox) {
         <p>
-          We're currently working on supporting Firefox with our development server. Meanwhile, try 
-          running the page using a different browser.
+          我们目前正在努力支持 Firefox 浏览器的开发服务器。但目前，还请尝试使用其他浏览器运行该页面。
         </p>
       }
-    } 
+    }
     @case (error()?.type === ErrorType.COOKIES || error()?.type === ErrorType.UNKNOWN) {
       <p>
-        We couldn't start the tutorial app. Please ensure third party cookies are enabled for this
-        site.
+        我们无法启动教程应用。请确保已为此站点启用第三方 Cookie。
       </p>
-    } 
+    }
     @case (error()?.type === ErrorType.OUT_OF_MEMORY) {
       <p>
-        We couldn't start the tutorial app because your browser is out of memory. To free up memory,
-        close angular.dev tutorials in other tabs or windows, and refresh the page.
+        我们无法启动教程应用，因为你的浏览器内存不足。请关闭其他标签页或窗口中的 angular.dev 教程，并刷新页面以释放内存。
       </p>
     }
   }
 
   @if (error()?.message) {
     <small>
-      The error message is:
+      错误信息为：
       <code>{{ error()!.message }}</code>
     </small>
   }

@@ -47,8 +47,8 @@ export class CustomErrorHandler implements ErrorHandler {
       .openFromComponent(ErrorSnackBar, {
         panelClass: 'docs-invert-mode',
         data: {
-          message: `Our docs have been updated, reload the page to see the latest.`,
-          actionText: `Reload`,
+          message: `我们的文档已更新，请刷新页面以查看最新内容。`,
+          actionText: `重新加载`,
         } satisfies ErrorSnackBarData,
       })
       .onAction()

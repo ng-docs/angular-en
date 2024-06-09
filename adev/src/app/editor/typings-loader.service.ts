@@ -133,7 +133,7 @@ export class TypingsLoader {
   }
 
   private async getTypeDefinitionFilesFromDirectory(directory: string): Promise<string[]> {
-    if (!this.webContainer) throw new Error('this.webContainer is not defined');
+    if (!this.webContainer) throw new Error('this.webContainer 尚未定义');
 
     const files = await this.webContainer.fs.readdir(directory);
 
