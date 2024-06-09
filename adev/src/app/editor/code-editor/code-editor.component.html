@@ -27,7 +27,7 @@
           @if (tab.isActive && canRenameFile(file.filename)) {
             <button
               class="docs-rename-file"
-              aria-label="rename file"
+              aria-label="重命名文件"
               (click)="onRenameButtonClick()"
             >
               <docs-icon>edit</docs-icon>
@@ -36,7 +36,7 @@
           @if (tab.isActive && canDeleteFile(file.filename)) {
           <button
             class="docs-delete-file"
-            aria-label="Delete file"
+            aria-label="删除文件"
             (click)="deleteFile(file.filename)"
           >
             <docs-icon>delete</docs-icon>
@@ -60,7 +60,7 @@
       }
     </mat-tab-group>
 
-    <button class="adev-add-file" (click)="onAddButtonClick()" aria-label="Add a new file">
+    <button class="adev-add-file" (click)="onAddButtonClick()" aria-label="添加新文件">
       <docs-icon>add</docs-icon>
     </button>
   </div>
@@ -89,8 +89,8 @@
     class="adev-editor-download-button"
     type="button"
     (click)="downloadCurrentCodeEditorState()"
-    aria-label="Download current source code"
-    matTooltip="Download current source code"
+    aria-label="下载当前源码"
+    matTooltip="下载当前源码"
     matTooltipPosition="above"
   >
     <docs-icon>download</docs-icon>

@@ -394,7 +394,7 @@ export class CodeMirrorEditor {
 
         this.currentFile().language,
 
-        placeholderExtension('Type your code here...'),
+        placeholderExtension('在此键入你的代码...'),
 
         ...this.getLanguageExtensions(),
       ],

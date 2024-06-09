@@ -25,7 +25,7 @@
           <!-- Preview Section: for larger screens -->
           <div class="adev-preview-section">
             <div class="adev-preview-header">
-              <span>Preview</span>
+              <span>预览</span>
             </div>
             @if (!displayPreviewInMatTabGroup()) {
             <docs-tutorial-preview />
@@ -38,13 +38,13 @@
           <!-- Container to hide preview, console and footer when only the interactive terminal is used  -->
           <mat-tab-group class="docs-editor-tabs" animationDuration="0ms" mat-stretch-tabs="false">
             @if (displayPreviewInMatTabGroup()) {
-            <mat-tab label="Preview">
+            <mat-tab label="预览">
               <docs-tutorial-preview />
             </mat-tab>
             }
-            <mat-tab label="Console">
+            <mat-tab label="控制台">
               <ng-template mat-tab-label>
-                Console @if (errorsCount()) {
+                控制台 @if (errorsCount()) {
                 <docs-icon class="docs-icon_high-contrast">error</docs-icon>
                 <span>
                   {{ errorsCount() }}
@@ -56,7 +56,7 @@
                 class="docs-tutorial-terminal"
               />
             </mat-tab>
-            <mat-tab label="Terminal">
+            <mat-tab label="终端">
               <docs-tutorial-terminal
                 [type]="TerminalType.INTERACTIVE"
                 class="docs-tutorial-terminal"
@@ -67,7 +67,7 @@
           <button
             type="button"
             (click)="reset()"
-            title="Refresh the preview"
+            title="刷新此预览"
             [disabled]="!shouldEnableReset()"
             class="adev-refresh-btn"
           >
