@@ -1,6 +1,5 @@
 {
-  "title": "Use *ngFor in templates",
-  "type": "editor",
-  "answerSrc": "../09-services/src",
-  "openFiles": ["src/app/home/home.component.ts"]
+  "openFiles" : [ "src/app/home/home.component.ts" ],
+  "title" : "在模板中使用 *ngFor",
+  "type" : "editor"
 }

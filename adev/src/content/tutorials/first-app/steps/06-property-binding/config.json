@@ -1,6 +1,5 @@
 {
-  "title": "Add property binding to components",
-  "type": "editor",
-  "answerSrc": "../07-dynamic-template-values/src",
-  "openFiles": ["src/app/home/home.component.ts"]
+  "openFiles" : [ "src/app/home/home.component.ts" ],
+  "title" : "向组件添加属性绑定",
+  "type" : "editor"
 }

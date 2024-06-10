@@ -1,5 +1,5 @@
 {
-  "openFiles": ["src/app/app.component.ts"],
-  "type": "editor",
-  "title": "Component composition"
+  "openFiles" : [ "src/app/app.component.ts" ],
+  "title" : "组件组合",
+  "type" : "editor"
 }

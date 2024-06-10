@@ -1,10 +1,5 @@
 {
-  "title": "Customize the details page",
-  "type": "local",
-  "answerSrc": "../12-forms/src",
-  "openFiles": [
-    "src/app/housing-location/housing-location.component.ts",
-    "src/app/details/details.component.ts",
-    "src/app/app.component.ts"
-  ]
+  "openFiles" : [ "src/app/housing-location/housing-location.component.ts", "src/app/details/details.component.ts", "src/app/app.component.ts" ],
+  "title" : "自定义详情页",
+  "type" : "local"
 }

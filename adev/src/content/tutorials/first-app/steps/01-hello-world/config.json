@@ -1,6 +1,5 @@
 {
-  "title": "Hello world!",
-  "type": "editor",
-  "answerSrc": "../02-HomeComponent/src",
-  "openFiles": ["src/app/app.component.ts"]
+  "openFiles" : [ "src/app/app.component.ts" ],
+  "title" : "你好，世界！",
+  "type" : "editor"
 }

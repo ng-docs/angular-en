@@ -1,5 +1,5 @@
 {
-  "openFiles": ["src/app/app.component.ts"],
-  "title": "Control flow in components - @if",
-  "type": "editor"
+  "openFiles" : [ "src/app/app.component.ts" ],
+  "title" : "组件中的控制流 - @if",
+  "type" : "editor"
 }

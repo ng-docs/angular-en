@@ -1,5 +1,5 @@
 {
-  "openFiles": ["src/app/user.component.ts"],
-  "title": "Getting form control values",
-  "type": "editor"
+  "openFiles" : [ "src/app/user.component.ts" ],
+  "title" : "获取表单控件值",
+  "type" : "editor"
 }

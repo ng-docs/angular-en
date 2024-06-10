@@ -1,5 +1,5 @@
 {
-  "type": "editor-only",
-  "title": "Hello world",
-  "openFiles": ["src/main.ts"]
+  "openFiles" : [ "src/main.ts" ],
+  "title" : "Hello world",
+  "type" : "editor-only"
 }

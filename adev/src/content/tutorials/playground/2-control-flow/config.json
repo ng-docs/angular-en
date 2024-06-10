@@ -1,5 +1,5 @@
 {
-  "type": "editor-only",
-  "title": "Control flow",
-  "openFiles": ["src/main.ts"]
+  "openFiles" : [ "src/main.ts" ],
+  "title" : "控制流",
+  "type" : "editor-only"
 }

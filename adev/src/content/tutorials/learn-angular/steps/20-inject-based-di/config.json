@@ -1,5 +1,5 @@
 {
-  "openFiles": ["src/app/car.service.ts", "src/app/app.component.ts"],
-  "title": "Inject-based dependency injection",
-  "type": "editor"
+  "openFiles" : [ "src/app/car.service.ts", "src/app/app.component.ts" ],
+  "title" : "基于注入的依赖注入",
+  "type" : "editor"
 }

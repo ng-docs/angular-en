@@ -1,6 +1,5 @@
 {
-  "title": "Add routing",
-  "type": "local",
-  "answerSrc": "../11-details-page/src",
-  "openFiles": ["src/main.ts", "src/app/app.component.ts"]
+  "openFiles" : [ "src/main.ts", "src/app/app.component.ts" ],
+  "title" : "添加路由",
+  "type" : "local"
 }

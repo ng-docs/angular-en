@@ -1,6 +1,5 @@
 {
-  "title": "Angular services",
-  "type": "editor",
-  "answerSrc": "../10-routing/src",
-  "openFiles": ["src/app/home/home.component.ts"]
+  "openFiles" : [ "src/app/home/home.component.ts" ],
+  "title" : "Angular 服务",
+  "type" : "editor"
 }

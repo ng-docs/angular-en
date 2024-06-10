@@ -1,5 +1,5 @@
 {
-  "openFiles": ["src/app/app.component.ts"],
-  "title": "Formatting data with pipes",
-  "type": "editor"
+  "openFiles" : [ "src/app/app.component.ts" ],
+  "title" : "使用管道格式化数据",
+  "type" : "editor"
 }

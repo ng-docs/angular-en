@@ -1,5 +1,5 @@
 {
-  "openFiles": ["src/app/app.routes.ts", "src/app/home/home.component.ts"],
-  "title": "Define a route",
-  "type": "editor"
+  "openFiles" : [ "src/app/app.routes.ts", "src/app/home/home.component.ts" ],
+  "title" : "定义一个路由",
+  "type" : "editor"
 }

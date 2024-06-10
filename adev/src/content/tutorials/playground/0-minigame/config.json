@@ -1,5 +1,5 @@
 {
-  "type": "editor-only",
-  "title": "Minigame",
-  "openFiles": ["src/main.ts", "src/game.html", "src/game.css"]
+  "openFiles" : [ "src/main.ts", "src/game.html", "src/game.css" ],
+  "title" : "小游戏",
+  "type" : "editor-only"
 }

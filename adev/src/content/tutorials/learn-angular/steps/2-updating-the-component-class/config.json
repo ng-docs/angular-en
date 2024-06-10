@@ -1,5 +1,5 @@
 {
-  "openFiles": ["src/app/app.component.ts"],
-  "type": "editor",
-  "title": "Updating the component"
+  "openFiles" : [ "src/app/app.component.ts" ],
+  "title" : "更新组件",
+  "type" : "editor"
 }

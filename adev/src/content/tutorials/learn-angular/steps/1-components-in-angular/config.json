@@ -1,5 +1,5 @@
 {
-  "openFiles": ["src/app/app.component.ts"],
-  "type": "editor",
-  "title": "Anatomy of a Component"
+  "openFiles" : [ "src/app/app.component.ts" ],
+  "title" : "组件剖析",
+  "type" : "editor"
 }

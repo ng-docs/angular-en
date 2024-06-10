@@ -1,5 +1,5 @@
 {
-  "type": "editor-only",
-  "title": "Signals",
-  "openFiles": ["src/main.ts"]
+  "openFiles" : [ "src/main.ts" ],
+  "title" : "信号",
+  "type" : "editor-only"
 }

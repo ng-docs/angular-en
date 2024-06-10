@@ -1,6 +1,5 @@
 {
-  "title": "Integrate Angular forms",
-  "type": "local",
-  "answerSrc": "../13-search/src",
-  "openFiles": ["src/app/housing.service.ts", "src/app/details/details.component.ts"]
+  "openFiles" : [ "src/app/housing.service.ts", "src/app/details/details.component.ts" ],
+  "title" : "集成 Angular 表单",
+  "type" : "local"
 }

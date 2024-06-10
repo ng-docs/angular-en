@@ -1,5 +1,5 @@
 {
-  "type": "editor-only",
-  "title": "Homepage",
-  "openFiles": ["src/main.ts"]
+  "openFiles" : [ "src/main.ts" ],
+  "title" : "主页",
+  "type" : "editor-only"
 }
