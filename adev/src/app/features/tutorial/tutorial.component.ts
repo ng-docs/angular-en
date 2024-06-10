@@ -44,7 +44,7 @@ import {SplitResizerHandler} from './split-resizer-handler.service';
 import {TutorialType} from '@angular/docs';
 import {TutorialNavigationData, TutorialNavigationItem} from '@angular/docs';
 
-const INTRODUCTION_LABEL = 'Introduction';
+const INTRODUCTION_LABEL = '简介';
 
 @Component({
   selector: 'adev-tutorial',
