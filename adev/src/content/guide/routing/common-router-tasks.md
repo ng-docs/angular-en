@@ -183,7 +183,7 @@ The Angular router selects this route any time the requested URL doesn't match a
 
 To set up a wildcard route, add the following code to your `routes` definition.
 
-<docs-code>
+<docs-code language="typescript">
 
 { path: '\*\*', component: <component-name> }
 
