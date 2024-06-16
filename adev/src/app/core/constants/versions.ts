@@ -59,7 +59,7 @@ export const VERSIONS_CONFIG = {
     },
     {
       version: 'v5',
-      url: 'https://v5.angular.io/docs',
+      url: 'https://v5.angular.cn/docs',
     },
     {
       version: 'v4',
