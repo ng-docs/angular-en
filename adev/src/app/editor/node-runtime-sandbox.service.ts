@@ -22,8 +22,8 @@ import {ErrorType, NodeRuntimeState} from './node-runtime-state.service';
 import {TerminalHandler} from './terminal/terminal-handler.service';
 import {TypingsLoader} from './typings-loader.service';
 
-export const DEV_SERVER_READY_MSG = '监视模式已启用。正在监视文件更改...';
-export const OUT_OF_MEMORY_MSG = '内存不足';
+export const DEV_SERVER_READY_MSG = 'Watch mode enabled. Watching for file changes...';
+export const OUT_OF_MEMORY_MSG = 'Out of memory';
 
 const enum PROCESS_EXIT_CODE {
   SUCCESS = 0, // process exited successfully
@@ -81,9 +81,9 @@ export class NodeRuntimeSandbox {
 
     try {
       if (!this.embeddedTutorialManager.type())
-        throw Error("教程类型不可用，无法初始化 NodeRuntimeSandbox。");
+        throw Error("Tutorial type isn't available, can not initialize the NodeRuntimeSandbox");
 
-      console.time('加载时间');
+      console.time('Load time');
 
       let webContainer: WebContainer;
       if (this.nodeRuntimeState.loadingStep() === LoadingStep.NOT_STARTED) {
@@ -105,7 +105,7 @@ export class NodeRuntimeSandbox {
         await this.initProject();
       }
 
-      console.timeEnd('加载时间');
+      console.timeEnd('Load time');
     } catch (error: any) {
       this.setErrorState(error.message);
     }
@@ -174,7 +174,7 @@ export class NodeRuntimeSandbox {
     const exitCode = await this.installDependencies();
 
     if (![PROCESS_EXIT_CODE.SIGTERM, PROCESS_EXIT_CODE.SUCCESS].includes(exitCode))
-      throw new Error('安装失败');
+      throw new Error('Installation failed');
 
     await Promise.all([this.loadTypes(), this.startDevServer()]);
   }
@@ -474,7 +474,7 @@ export class NodeRuntimeSandbox {
     // wait until the dev server finishes the first compilation
     await new Promise<void>((resolve, reject) => {
       if (!this.devServerProcess) {
-        reject('没有运行中的开发服务器');
+        reject('dev server is not running');
         return;
       }
 
