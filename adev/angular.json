@@ -46,7 +46,8 @@
           },
           "configurations": {
             "production": {
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "ssr": false
             },
             "development": {
               "optimization": false,
