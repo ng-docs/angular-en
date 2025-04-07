@@ -68,7 +68,7 @@
   <button
     class="adev-editor-download-button"
     type="button"
-    aria-label="Open current code in editor in an online editor"
+    aria-label="以在线编辑器打开当前代码"
     [cdkMenuTriggerFor]="launcherMenu"
   >
     <docs-icon>launch</docs-icon>
@@ -77,11 +77,11 @@
   <ng-template #launcherMenu>
     <div class="adev-editor-dropdown" cdkMenu>
         <button cdkMenuItem (click)="openCurrentSolutionInIDX()">
-          <span>Open in IDX </span>
+          <span>在 IDX 中打开</span>
           <img class="icon" src="assets/images/tutorials/common/idx_logo.svg" height="32">
         </button>
         <button cdkMenuItem (click)="openCurrentCodeInStackBlitz()">
-          Open in StackBlitz
+          在 StackBlitz 中打开
         </button>
     </div>
   </ng-template>
