@@ -20,8 +20,9 @@ import {ErrorType, NodeRuntimeState} from './node-runtime-state.service';
 import {TerminalHandler} from './terminal/terminal-handler.service';
 import {TypingsLoader} from './typings-loader.service';
 
-export const DEV_SERVER_READY_MSG = '监视模式已启用。正在监视文件更改...';
-export const OUT_OF_MEMORY_MSG = '内存不足';
+// 这两个不能翻译，因为它是用于判断状态的信息
+export const DEV_SERVER_READY_MSG = 'Watch mode enabled. Watching for file changes...';
+export const OUT_OF_MEMORY_MSG = 'Out of memory';
 
 const enum PROCESS_EXIT_CODE {
   SUCCESS = 0, // process exited successfully
