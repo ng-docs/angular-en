@@ -135,7 +135,7 @@ export class CodeEditor implements AfterViewInit, OnDestroy {
 
     const path = this.location.path();
     const editorUrl = `${ANGULAR_DEV}${path}`;
-    const description = `Angular.dev example generated from [${editorUrl}](${editorUrl})`;
+    const description = `由 [${editorUrl}](${editorUrl}) 生成的 Angular.dev 代码`;
 
     await this.stackblitzOpener.openCurrentSolutionInStackBlitz({title, description});
   }

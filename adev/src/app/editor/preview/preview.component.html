@@ -14,20 +14,20 @@
     <div class="adev-embedded-editor-preview-loading">
       @switch (loadingProgressValue()) {
         @case (loadingEnum.NOT_STARTED) {
-          <span class="adev-embedded-editor-preview-loading-starting">Starting</span>
+          <span class="adev-embedded-editor-preview-loading-starting">正在启动</span>
         }
         @case (loadingEnum.BOOT) {
-          <span class="adev-embedded-editor-preview-loading-boot">Booting</span>
+          <span class="adev-embedded-editor-preview-loading-boot">正在引导</span>
         }
         @case (loadingEnum.LOAD_FILES) {
-          <span class="adev-embedded-editor-preview-loading-load-files">Creating project</span>
+          <span class="adev-embedded-editor-preview-loading-load-files">正在创建项目</span>
         }
         @case (loadingEnum.INSTALL) {
-          <span class="adev-embedded-editor-preview-loading-install">Installing packages</span>
+          <span class="adev-embedded-editor-preview-loading-install">正在安装依赖包</span>
         }
         @case (loadingEnum.START_DEV_SERVER) {
           <span class="adev-embedded-editor-preview-loading-start-dev-server">
-            Initializing dev server
+            正在初始化开发服务器
           </span>
         }
       }

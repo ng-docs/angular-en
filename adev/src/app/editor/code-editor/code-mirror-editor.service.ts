@@ -172,7 +172,7 @@ export class CodeMirrorEditor {
     if (!this._editorView) return;
 
     const newFile = this.files().find((file) => file.filename === fileName);
-    if (!newFile) throw new Error(`File '${fileName}' not found`);
+    if (!newFile) throw new Error(`文件 '${fileName}' 未找到`);
 
     this.currentFile.set(newFile);
 
