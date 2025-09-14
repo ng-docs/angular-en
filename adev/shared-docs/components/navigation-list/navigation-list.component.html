@@ -75,7 +75,7 @@
             <button
               type="button"
               (click)="toggle(item)"
-              [attr.aria-label]="(item.isExpanded ? 'Collapse' : 'Expand') + ' ' + item.label"
+              [attr.aria-label]="(item.isExpanded ? '收起' : '展开') + ' ' + item.label"
               [attr.aria-expanded]="item.isExpanded"
               class="docs-secondary-nav-button"
               [class.docs-faceted-list-item-active]="item | isActiveNavigationItem: activeItem()"
@@ -111,8 +111,8 @@
 
 <ng-template let-item #itemStatus>
   @if (item.status === 'new') {
-    <span class="tag docs-new-item">New</span>
+    <span class="tag docs-new-item">新增</span>
   } @else if (item.status === 'updated') {
-    <span class="tag docs-updated-item">Updated</span>
+    <span class="tag docs-updated-item">已更新</span>
   }
 </ng-template>

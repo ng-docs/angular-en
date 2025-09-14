@@ -6,7 +6,7 @@
  * found in the LICENSE file at https://angular.dev/license
  */
 
-import {DOCUMENT, Injectable, VERSION, computed, inject} from '@angular/core';
+import {computed, DOCUMENT, inject, Injectable, VERSION} from '@angular/core';
 import {httpResource} from '@angular/common/http';
 
 import versionJson from '../../../assets/others/versions.json';
@@ -62,7 +62,7 @@ export class VersionManager {
   // which is the most up-to-date anyway.
   remoteVersions = httpResource(
     () => ({
-      url: 'https://angular.dev/assets/others/versions.json',
+      url: '/assets/others/versions.json',
       transferCache: false,
       cache: 'no-cache',
     }),

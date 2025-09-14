@@ -31,7 +31,7 @@
             @if (tab.isActive && canRenameFile(file.filename)) {
               <button
                 class="docs-rename-file"
-                aria-label="rename file"
+                aria-label="重命名文件"
                 matTooltip="Rename file"
                 matTooltipPosition="above"
                 (click)="onRenameButtonClick()"
@@ -42,7 +42,7 @@
             @if (tab.isActive && canDeleteFile(file.filename)) {
               <button
                 class="docs-delete-file"
-                aria-label="Delete file"
+                aria-label="删除文件"
                 matTooltip="Delete file"
                 matTooltipPosition="above"
                 (click)="deleteFile(file.filename)"
@@ -73,7 +73,7 @@
       <button
         class="adev-add-file"
         (click)="onAddButtonClick()"
-        aria-label="Add a new file"
+        aria-label="添加新文件"
         matTooltip="Add a new file"
         matTooltipPosition="above"
       >
@@ -85,7 +85,7 @@
   <button
     class="adev-editor-download-button"
     type="button"
-    aria-label="Open current code in editor in an online editor"
+    aria-label="以在线编辑器打开当前代码"
     [cdkMenuTriggerFor]="launcherMenu"
   >
     <docs-icon>launch</docs-icon>
@@ -94,18 +94,18 @@
   <ng-template #launcherMenu>
     <div class="adev-editor-dropdown" cdkMenu>
       <button cdkMenuItem (click)="openCurrentSolutionInFirebaseStudio()">
-        <span>Open in Firebase Studio </span>
+        <span>在 Firebase Studio 中打开</span>
         <img class="icon" src="assets/images/tutorials/common/firebase-studio_logo.svg" height="32" />
       </button>
-      <button cdkMenuItem (click)="openCurrentCodeInStackBlitz()">Open in StackBlitz</button>
+      <button cdkMenuItem (click)="openCurrentCodeInStackBlitz()">在 StackBlitz 中打开</button>
     </div>
   </ng-template>
   <button
     class="adev-editor-download-button"
     type="button"
     (click)="downloadCurrentCodeEditorState()"
-    aria-label="Download current source code"
-    matTooltip="Download current source code"
+    aria-label="下载当前源码"
+    matTooltip="下载当前源码"
     matTooltipPosition="above"
   >
     <docs-icon>download</docs-icon>

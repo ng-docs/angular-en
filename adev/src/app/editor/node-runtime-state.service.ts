@@ -79,7 +79,7 @@ export class NodeRuntimeState {
   private checkUnsupportedEnvironment(): void {
     if (isIos) {
       this.setError({
-        message: 'Unsupported environment',
+        message: '不支持此环境',
         type: ErrorType.UNSUPPORTED_BROWSER_ENVIRONMENT,
       });
     }

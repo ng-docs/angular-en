@@ -1,0 +1,13 @@
+load("//tools:defaults.bzl", "copy_to_bin")
+
+exports_files(
+    glob(["*"]),
+)
+
+copy_to_bin(
+    name = "css",
+    srcs = glob(["*"]),
+    visibility = [
+        "//visibility:public",
+    ],
+)

@@ -4,9 +4,9 @@
       [autofocus]="true"
       [hideIcon]="true"
       [formControl]="searchControl"
-      [resetLabel]="'Clear the search'"
+      [resetLabel]="'清除搜索'"
       class="docs-search-input"
-      placeholder="Search docs"
+      placeholder="搜索文档"
     />
 
     @if (searchResults().length) {
@@ -51,11 +51,11 @@
       <div class="docs-search-results docs-mini-scroll-track">
         @if (!resultsResource.hasValue()) {
           <div class="docs-search-results__start-typing">
-            <span>Start typing to see results</span>
+            <span>开始输入以查看结果</span>
           </div>
         } @else if (searchResults().length === 0) {
           <div class="docs-search-results__no-results">
-            <span>No results found</span>
+            <span>未找到结果</span>
           </div>
         }
       </div>
@@ -64,8 +64,9 @@
     <div class="docs-search-footer">
       <ul class="docs-search-commands">
         <li>
+          按
           <kbd class="docs-search-commands-key">
-            <svg width="15" height="15" aria-label="Enter key" role="img">
+            <svg width="15" height="15" aria-label="回车键" role="img">
               <g
                 fill="none"
                 stroke="currentColor"
@@ -77,11 +78,12 @@
               </g>
             </svg>
           </kbd>
-          <span>to select</span>
+          <span>选取</span>
         </li>
         <li>
+          按
           <kbd class="docs-search-commands-key">
-            <svg width="15" height="15" aria-label="Arrow down" role="img">
+            <svg width="15" height="15" aria-label="向下箭头" role="img">
               <g
                 fill="none"
                 stroke="currentColor"
@@ -94,7 +96,7 @@
             </svg>
           </kbd>
           <kbd class="docs-search-commands-key">
-            <svg width="15" height="15" aria-label="Arrow up" role="img">
+            <svg width="15" height="15" aria-label="向上箭头" role="img">
               <g
                 fill="none"
                 stroke="currentColor"
@@ -106,11 +108,11 @@
               </g>
             </svg>
           </kbd>
-          <span>to navigate</span>
+          <span>导航</span>
         </li>
         <li>
           <kbd class="docs-search-commands-key"
-            ><svg width="15" height="15" aria-label="Escape key" role="img">
+            ><svg width="15" height="15" aria-label="Escape 键" role="img">
               <g
                 fill="none"
                 stroke="currentColor"
@@ -124,11 +126,11 @@
               </g>
             </svg>
           </kbd>
-          <span>to close</span>
+          <span>关闭</span>
         </li>
       </ul>
       <div class="docs-algolia">
-        <span>Search by</span>
+        <span>由</span>
         <a
           target="_blank"
           rel="noopener"
@@ -136,6 +138,7 @@
         >
           <docs-algolia-icon />
         </a>
+        <span>提供搜索支持</span>
       </div>
     </div>
   </div>

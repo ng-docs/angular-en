@@ -1,21 +1,21 @@
 @if (!hasAccepted()) {
 <div class="docs-cookies-popup docs-invert-mode">
-  <p>This site uses cookies from Google to deliver its services and to analyze traffic.</p>
+  <p>本网站使用 Google 的 Cookie 来提供服务并分析流量。</p>
 
   <div>
     <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener">
-      <button class="docs-primary-btn" [attr.text]="'Learn more'" aria-label="Learn More">
-        Learn more
+      <button class="docs-primary-btn" [attr.text]="'了解更多'" aria-label="了解更多">
+        了解更多
       </button>
     </a>
     <button
       type="button"
       (click)="accept()"
       class="docs-primary-btn"
-      [attr.text]="'Ok, Got it'"
-      aria-label="Ok, Got it"
+      [attr.text]="'好的，我知道了'"
+      aria-label="好的，我知道了"
     >
-      Ok, Got it
+      好的，我知道了
     </button>
   </div>
 </div>

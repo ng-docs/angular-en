@@ -23,9 +23,9 @@
         role="switch"
         class="docs-example-code-toggle"
         [attr.aria-checked]="showCode()"
-        [attr.aria-label]="showCode() ? 'Hide code' : 'Show code'"
+        [attr.aria-label]="showCode() ? '隐藏代码' : '显示代码'"
         (click)="showCode.set(!showCode())"
-        [matTooltip]="showCode() ? 'Hide code' : 'Show code'"
+        [matTooltip]="showCode() ? '隐藏代码' : '显示代码'"
         matTooltipPosition="above"
       >
         <docs-icon>{{showCode() ? 'code_off' : 'code'}}</docs-icon>
@@ -33,9 +33,9 @@
       <button
         type="button"
         class="docs-example-copy-link"
-        [attr.aria-label]="'Copy link to ' + exampleMetadata()?.title + ' example to the clipboard'"
+        [attr.aria-label]="'将 ' + exampleMetadata()?.title + ' 示例的链接复制到剪贴板'"
         (click)="copyLink()"
-        matTooltip="Copy link to example"
+        matTooltip="复制示例链接"
         matTooltipPosition="above"
       >
         <i aria-hidden="true">
@@ -60,8 +60,8 @@
         <button
           type="button"
           (click)="toggleExampleVisibility()"
-          [attr.aria-label]="(expanded() ? 'Collapse' : 'Expand') + ' code example'"
-          matTooltip="{{ expanded() ? 'Collapse' : 'Expand' }} example"
+          [attr.aria-label]="(expanded() ? '收起' : '展开') + ' 代码示例'"
+          matTooltip="{{ expanded() ? '收起' : '展开' }}示例"
           matTooltipPosition="above"
         >
           <i aria-hidden="true">
@@ -123,8 +123,8 @@
           [href]="githubUrl()"
           target="_blank"
           class="docs-example-github-link"
-          aria-label="Open example on GitHub"
-          matTooltip="Open example on GitHub"
+          aria-label="在 GitHub 上打开示例"
+          matTooltip="在 GitHub 上打开示例"
           matTooltipPosition="above"
         >
           <i aria-hidden="true">
@@ -151,8 +151,8 @@
           [href]="stackblitzUrl()"
           target="_blank"
           class="docs-example-stackblitz-link"
-          aria-label="Edit example in StackBlitz"
-          matTooltip="Edit example in StackBlitz"
+          aria-label="在 StackBlitz 中编辑示例"
+          matTooltip="在 StackBlitz 中编辑示例"
           matTooltipPosition="above"
         >
           <i aria-hidden="true">

@@ -91,9 +91,9 @@ export class NodeRuntimeSandbox {
 
     try {
       if (!this.embeddedTutorialManager.type())
-        throw Error("Tutorial type isn't available, can not initialize the NodeRuntimeSandbox");
+        throw Error('教程类型不可用，无法初始化 NodeRuntimeSandbox。');
 
-      console.time('Load time');
+      console.time('加载时间');
 
       let webContainer: WebContainer;
       if (this.nodeRuntimeState.loadingStep() === LoadingStep.NOT_STARTED) {
@@ -112,7 +112,7 @@ export class NodeRuntimeSandbox {
       const startDevServer = this.embeddedTutorialManager.type() !== TutorialType.CLI;
       await this.initProject(startDevServer);
 
-      console.timeEnd('Load time');
+      console.timeEnd('加载时间');
     } catch (error: any) {
       // If we're already in an error state, throw away the most recent error which may have happened because
       // we were in the error state already and tried to do more things after terminating.
@@ -192,7 +192,7 @@ export class NodeRuntimeSandbox {
     const exitCode = await this.installDependencies();
 
     if (![PROCESS_EXIT_CODE.SIGTERM, PROCESS_EXIT_CODE.SUCCESS].includes(exitCode))
-      throw new Error('Installation failed');
+      throw new Error('安装失败');
 
     await Promise.all([
       this.loadTypes(),
@@ -446,7 +446,7 @@ export class NodeRuntimeSandbox {
     // wait until the dev server finishes the first compilation
     await new Promise<void>((resolve, reject) => {
       if (!this.devServerProcess) {
-        reject('dev server is not running');
+        reject('没有运行中的开发服务器');
         return;
       }
 

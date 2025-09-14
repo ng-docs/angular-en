@@ -80,10 +80,10 @@ export default class ApiReferenceList {
   protected readonly statuses = STATUSES;
 
   protected readonly statusLabels = {
-    [STATUSES.stable]: 'Stable',
-    [STATUSES.developerPreview]: 'Developer Preview',
-    [STATUSES.experimental]: 'Experimental',
-    [STATUSES.deprecated]: 'Deprecated',
+    [STATUSES.stable]: '稳定版',
+    [STATUSES.developerPreview]: '开发者预览',
+    [STATUSES.experimental]: '试验',
+    [STATUSES.deprecated]: '已弃用',
   };
 
   readonly filteredGroups = computed((): ApiItemsGroup[] => {

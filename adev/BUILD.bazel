@@ -25,6 +25,8 @@ APPLICATION_FILES = [
     "//adev/src/assets:content",
     "//adev/src/assets:context",
     "//adev/src/content/examples:embeddable",
+    "//adev/src/assets/css",
+    "//adev/src/assets/fonts",
 ] + glob(
     ["src/**/*"],
     exclude = ["src/**/*.spec.ts"],

@@ -140,7 +140,7 @@ export class CodeEditor {
 
     const path = this.location.path();
     const editorUrl = `${ANGULAR_DEV}${path}`;
-    const description = `Angular.dev example generated from [${editorUrl}](${editorUrl})`;
+    const description = `由 [${editorUrl}](${editorUrl}) 生成的 Angular.dev 代码`;
 
     await this.stackblitzOpener.openCurrentSolutionInStackBlitz({title, description});
   }
@@ -191,7 +191,7 @@ export class CodeEditor {
 
     if (renameFileInputValue) {
       if (renameFileInputValue.includes('..')) {
-        alert('File name can not contain ".."');
+        alert('文件名不能包含 ".."');
         return;
       }
 
@@ -199,7 +199,7 @@ export class CodeEditor {
       const newFile = 'src/' + renameFileInputValue;
 
       if (this.files().find(({filename}) => filename.includes(newFile))) {
-        alert('File name already exists');
+        alert('文件名已存在');
         return;
       }
 
@@ -219,7 +219,7 @@ export class CodeEditor {
 
     if (newFileInputValue) {
       if (newFileInputValue.includes('..')) {
-        alert('File name can not contain ".."');
+        alert('文件名不能包含 ".."');
         return;
       }
 
@@ -227,7 +227,7 @@ export class CodeEditor {
       const newFile = 'src/' + newFileInputValue;
 
       if (this.files().find(({filename}) => filename.includes(newFile))) {
-        alert('File already exists');
+        alert('文件已存在');
         return;
       }
 
